@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		1BFE3CDB2EC39F32004305C1 /* IGDB-SWIFT-API in Frameworks */ = {isa = PBXBuildFile; productRef = 1BFE3CDA2EC39F32004305C1 /* IGDB-SWIFT-API */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		1B762ADF2EC39A6E00E906F2 /* Playdex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Playdex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BFE3CDB2EC39F32004305C1 /* IGDB-SWIFT-API in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,7 @@
 			);
 			name = Playdex;
 			packageProductDependencies = (
+				1BFE3CDA2EC39F32004305C1 /* IGDB-SWIFT-API */,
 			);
 			productName = Playdex;
 			productReference = 1B762ADF2EC39A6E00E906F2 /* Playdex.app */;
@@ -94,6 +100,9 @@
 			);
 			mainGroup = 1B762AD62EC39A6E00E906F2;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				1BFE3CD92EC39F32004305C1 /* XCRemoteSwiftPackageReference "IGDB-SWIFT-API" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 1B762AE02EC39A6E00E906F2 /* Products */;
 			projectDirPath = "";
@@ -331,6 +340,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1BFE3CD92EC39F32004305C1 /* XCRemoteSwiftPackageReference "IGDB-SWIFT-API" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/husnjak/IGDB-SWIFT-API";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1BFE3CDA2EC39F32004305C1 /* IGDB-SWIFT-API */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1BFE3CD92EC39F32004305C1 /* XCRemoteSwiftPackageReference "IGDB-SWIFT-API" */;
+			productName = "IGDB-SWIFT-API";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1B762AD72EC39A6E00E906F2 /* Project object */;
 }
